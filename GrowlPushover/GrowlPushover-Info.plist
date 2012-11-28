@@ -25,11 +25,11 @@
 	<key>GrowlPluginAuthor</key>
 	<string>Jedda Wignall (http://jedda.me)</string>
 	<key>GrowlPluginDescription</key>
-	<string>An action style for Growl 2.0 and higher that forwards messages to the Pushover notification service.</string>
+	<string>An action style for Growl 2.0 and higher that forwards Growl notifications to the Pushover notification service.</string>
 	<key>GrowlPluginsFrameworkVersion</key>
 	<string>1.0</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 Jedda Wignall. All rights reserved.</string>
+	<string>This work is licensed under a Creative Commons Attribution 3.0 Unported License. Attribution to Jedda Wignall (http://jedda.me/projects/pushover-action-growl/)</string>
 	<key>NSPrincipalClass</key>
 	<string>GrowlPushoverAction</string>
 </dict>
