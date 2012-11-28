@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Pushover</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
@@ -21,16 +21,16 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0</string>
 	<key>GrowlPluginAuthor</key>
-	<string>Jedda Wignall</string>
+	<string>Jedda Wignall (http://jedda.me)</string>
 	<key>GrowlPluginDescription</key>
-	<string>Plugin description</string>
+	<string>An action style for Growl 2.0 and higher that forwards messages to the Pushover notification service.</string>
 	<key>GrowlPluginsFrameworkVersion</key>
 	<string>1.0</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2012 Jedda Wignall. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>GrowlGrowlPushoverAction</string>
+	<string>GrowlPushoverAction</string>
 </dict>
 </plist>

@@ -1,18 +1,21 @@
 //
-//  GrowlGrowlPushoverPreferencePane.m
-//  GrowlPushover
+//  GrowlPushoverPreferencePane.m
+//
+//  Growl-Pushover
+//  An action style for Growl 2.0 and higher that forwards messages to the Pushover notification service.
+//  http://jedda.me/projects/pushover-action-growl/
 //
 //  Created by Jedda Wignall on 28/11/12.
-//  Copyright (c) 2012 Jedda Wignall. All rights reserved.
-//
-//  This class represents your plugin's preference pane.  There will be only one instance, but possibly many configurations
-//  In order to access a configuration values, use the NSMutableDictionary *configuration for getting them. 
-//  In order to change configuration values, use [self setConfigurationValue:forKey:]
-//  This ensures that the configuration gets saved into the database properly.
+//  This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+//  http://creativecommons.org/licenses/by/3.0/deed.en_US
 
-#import "GrowlGrowlPushoverPreferencePane.h"
+#import "GrowlPushoverPreferencePane.h"
+#import "GrowlPushoverAction.h"
 
-@implementation GrowlGrowlPushoverPreferencePane
+@implementation GrowlPushoverPreferencePane
+
+@synthesize  specificDeviceStringField, priorityListButton, prefixStringField;
+@synthesize  testStatusField;
 
 -(NSString*)mainNibName {
 	return @"GrowlPushoverPrefPane";
@@ -26,7 +29,8 @@
 	static NSSet *keys = nil;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
-		keys = [[NSSet set] retain];
+		keys = [NSSet setWithObjects:@"pushoverUserKey", @"onlyIfIdle", @"onlyToSpecificDevice", @"specificDeviceString", @"onlyIfPriority", @"minimumPriority", @"usePrefix", @"prefixString", @"pushoverAppKey", nil];
+        NSLog(@"BindingKeysBeingCalled");
 	});
 	return keys;
 }
@@ -36,10 +40,96 @@
  * that are unbindable.  Call the super version in order to ensure bindingKeys is also called and used.
  * Uncomment the method to use.
  */
-/*
+
 -(void)updateConfigurationValues {
 	[super updateConfigurationValues];
+    
+    if ([[self.configuration valueForKey:@"onlyIfPriority"] boolValue]) {
+        [priorityListButton setEnabled:TRUE];
+    } else {
+        [priorityListButton setEnabled:FALSE];
+    }
+    
+    if ([[self.configuration valueForKey:@"usePrefix"] boolValue]) {
+        [prefixStringField setEnabled:TRUE];
+    } else {
+        [prefixStringField setEnabled:FALSE];
+    }
+    
+    if ([[self.configuration valueForKey:@"onlyToSpecificDevice"] boolValue]) {
+        [specificDeviceStringField setEnabled:TRUE];
+    } else {
+        [specificDeviceStringField setEnabled:FALSE];
+    }
+
 }
-*/
+
+- (IBAction)testPushoverSettings:(id)sender {
+    [self.mainView.window makeFirstResponder:sender];
+    GrowlPushoverAction *pushoverAction = [[GrowlPushoverAction alloc] init];
+    pushoverAction.preferencePaneInstance = self;
+    NSDictionary* testNotification = [NSDictionary dictionaryWithObjectsAndKeys: @"Test Notification", @"NotificationTitle", @"This is a test notification.", @"NotificationDescription", nil];
+    [pushoverAction sendPushoverNotificationWithGrowlNotification:testNotification configuration:self.configuration];
+}
+
+- (NSString*)pushoverUserKey { return [self.configuration valueForKey:@"pushoverUserKey"]; }
+
+- (void)setPushoverUserKey:(NSString*)pushoverUserKey {
+  [self setConfigurationValue:pushoverUserKey forKey:@"pushoverUserKey"];
+}
+
+- (BOOL)onlyIfIdle { return [[self.configuration valueForKey:@"onlyIfIdle"] boolValue]; }
+
+- (void)setOnlyIfIdle:(BOOL)onlyIfIdle {
+    [self setConfigurationValue:[NSNumber numberWithBool:onlyIfIdle] forKey:@"onlyIfIdle"];
+}
+
+- (BOOL)onlyToSpecificDevice { return [[self.configuration valueForKey:@"onlyToSpecificDevice"] boolValue]; }
+
+- (void)setOnlyToSpecificDevice:(BOOL)onlyToSpecificDevice {
+    [self setConfigurationValue:[NSNumber numberWithBool:onlyToSpecificDevice] forKey:@"onlyToSpecificDevice"];
+    [self updateConfigurationValues];
+
+}
+
+- (NSString*)specificDeviceString { return [self.configuration valueForKey:@"specificDeviceString"]; }
+
+- (void)setSpecificDeviceString:(NSString*)specificDeviceString {
+    [self setConfigurationValue:specificDeviceString forKey:@"specificDeviceString"];
+}
+
+- (BOOL)onlyIfPriority { return [[self.configuration valueForKey:@"onlyIfPriority"] boolValue]; }
+
+- (void)setOnlyIfPriority:(BOOL)onlyIfPriority {
+    [self setConfigurationValue:[NSNumber numberWithBool:onlyIfPriority] forKey:@"onlyIfPriority"];
+    [self updateConfigurationValues];
+}
+
+- (int)minimumPriority { return [[self.configuration valueForKey:@"minimumPriority"] intValue]; }
+
+- (void)setMinimumPriority:(int)minimumPriority {
+    [self setConfigurationValue:[NSNumber numberWithInt:minimumPriority] forKey:@"minimumPriority"];
+}
+
+- (BOOL)usePrefix { return [[self.configuration valueForKey:@"usePrefix"] boolValue]; }
+
+- (void)setUsePrefix:(BOOL)usePrefix {
+    [self setConfigurationValue:[NSNumber numberWithBool:usePrefix] forKey:@"usePrefix"];
+    [self updateConfigurationValues];
+}
+
+- (NSString*)prefixString { return [self.configuration valueForKey:@"prefixString"]; }
+
+- (void)setPrefixString:(NSString*)prefixString {
+    [self setConfigurationValue:prefixString forKey:@"prefixString"];
+}
+
+- (NSString*)pushoverAppKey { return [self.configuration valueForKey:@"pushoverAppKey"]; }
+
+- (void)setPushoverAppKey:(NSString*)pushoverAppKey {
+    [self setConfigurationValue:pushoverAppKey forKey:@"pushoverAppKey"];
+}
+
+
 
 @end
