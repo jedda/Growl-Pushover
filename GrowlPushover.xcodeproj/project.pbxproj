@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0450C876166595AB00074A11 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0450C875166595AB00074A11 /* Cocoa.framework */; };
+		0450C878166595AB00074A11 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0450C877166595AB00074A11 /* AppKit.framework */; };
+		0450C87A166595AB00074A11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0450C879166595AB00074A11 /* Foundation.framework */; };
+		0450C880166595AB00074A11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0450C87E166595AB00074A11 /* InfoPlist.strings */; };
+		0450C884166595AB00074A11 /* GrowlPushoverPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0450C882166595AB00074A11 /* GrowlPushoverPrefPane.xib */; };
+		0450C886166595AB00074A11 /* GrowlPlugins.framework in Resources */ = {isa = PBXBuildFile; fileRef = 0450C885166595AB00074A11 /* GrowlPlugins.framework */; };
+		0450C889166595AB00074A11 /* GrowlGrowlPushoverPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C888166595AB00074A11 /* GrowlGrowlPushoverPreferencePane.m */; };
+		0450C88C166595AB00074A11 /* GrowlGrowlPushoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C88B166595AB00074A11 /* GrowlGrowlPushoverAction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0450C872166595AB00074A11 /* GrowlPushover.growlView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowlPushover.growlView; sourceTree = BUILT_PRODUCTS_DIR; };
+		0450C875166595AB00074A11 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0450C877166595AB00074A11 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0450C879166595AB00074A11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0450C87D166595AB00074A11 /* GrowlPushover-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrowlPushover-Info.plist"; sourceTree = "<group>"; };
+		0450C87F166595AB00074A11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0450C881166595AB00074A11 /* GrowlPushover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrowlPushover-Prefix.pch"; sourceTree = "<group>"; };
+		0450C883166595AB00074A11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GrowlPushoverPrefPane.xib; sourceTree = "<group>"; };
+		0450C885166595AB00074A11 /* GrowlPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = text; path = GrowlPlugins.framework; sourceTree = "<group>"; };
+		0450C887166595AB00074A11 /* GrowlGrowlPushoverPreferencePane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowlGrowlPushoverPreferencePane.h; sourceTree = "<group>"; };
+		0450C888166595AB00074A11 /* GrowlGrowlPushoverPreferencePane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowlGrowlPushoverPreferencePane.m; sourceTree = "<group>"; };
+		0450C88A166595AB00074A11 /* GrowlGrowlPushoverAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowlGrowlPushoverAction.h; sourceTree = "<group>"; };
+		0450C88B166595AB00074A11 /* GrowlGrowlPushoverAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowlGrowlPushoverAction.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0450C86F166595AB00074A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0450C876166595AB00074A11 /* Cocoa.framework in Frameworks */,
+				0450C878166595AB00074A11 /* AppKit.framework in Frameworks */,
+				0450C87A166595AB00074A11 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0450C867166595AB00074A11 = {
+			isa = PBXGroup;
+			children = (
+				0450C87B166595AB00074A11 /* GrowlPushover */,
+				0450C874166595AB00074A11 /* Frameworks */,
+				0450C873166595AB00074A11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0450C873166595AB00074A11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0450C872166595AB00074A11 /* GrowlPushover.growlView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0450C874166595AB00074A11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0450C875166595AB00074A11 /* Cocoa.framework */,
+				0450C877166595AB00074A11 /* AppKit.framework */,
+				0450C879166595AB00074A11 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0450C87B166595AB00074A11 /* GrowlPushover */ = {
+			isa = PBXGroup;
+			children = (
+				0450C882166595AB00074A11 /* GrowlPushoverPrefPane.xib */,
+				0450C885166595AB00074A11 /* GrowlPlugins.framework */,
+				0450C887166595AB00074A11 /* GrowlGrowlPushoverPreferencePane.h */,
+				0450C888166595AB00074A11 /* GrowlGrowlPushoverPreferencePane.m */,
+				0450C88A166595AB00074A11 /* GrowlGrowlPushoverAction.h */,
+				0450C88B166595AB00074A11 /* GrowlGrowlPushoverAction.m */,
+				0450C87C166595AB00074A11 /* Supporting Files */,
+			);
+			path = GrowlPushover;
+			sourceTree = "<group>";
+		};
+		0450C87C166595AB00074A11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0450C87D166595AB00074A11 /* GrowlPushover-Info.plist */,
+				0450C87E166595AB00074A11 /* InfoPlist.strings */,
+				0450C881166595AB00074A11 /* GrowlPushover-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0450C871166595AB00074A11 /* GrowlPushover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0450C88F166595AB00074A11 /* Build configuration list for PBXNativeTarget "GrowlPushover" */;
+			buildPhases = (
+				0450C86E166595AB00074A11 /* Sources */,
+				0450C86F166595AB00074A11 /* Frameworks */,
+				0450C870166595AB00074A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrowlPushover;
+			productName = GrowlPushover;
+			productReference = 0450C872166595AB00074A11 /* GrowlPushover.growlView */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0450C869166595AB00074A11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Jedda Wignall";
+			};
+			buildConfigurationList = 0450C86C166595AB00074A11 /* Build configuration list for PBXProject "GrowlPushover" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0450C867166595AB00074A11;
+			productRefGroup = 0450C873166595AB00074A11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0450C871166595AB00074A11 /* GrowlPushover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0450C870166595AB00074A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0450C880166595AB00074A11 /* InfoPlist.strings in Resources */,
+				0450C884166595AB00074A11 /* GrowlPushoverPrefPane.xib in Resources */,
+				0450C886166595AB00074A11 /* GrowlPlugins.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0450C86E166595AB00074A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0450C889166595AB00074A11 /* GrowlGrowlPushoverPreferencePane.m in Sources */,
+				0450C88C166595AB00074A11 /* GrowlGrowlPushoverAction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0450C87E166595AB00074A11 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0450C87F166595AB00074A11 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0450C882166595AB00074A11 /* GrowlPushoverPrefPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0450C883166595AB00074A11 /* en */,
+			);
+			name = GrowlPushoverPrefPane.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0450C88D166595AB00074A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0450C88E166595AB00074A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0450C890166595AB00074A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrowlPushover/GrowlPushover-Prefix.pch";
+				INFOPLIST_FILE = "GrowlPushover/GrowlPushover-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Application Support/Growl/Plugins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = Debug;
+		};
+		0450C891166595AB00074A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrowlPushover/GrowlPushover-Prefix.pch";
+				INFOPLIST_FILE = "GrowlPushover/GrowlPushover-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Application Support/Growl/Plugins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0450C86C166595AB00074A11 /* Build configuration list for PBXProject "GrowlPushover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0450C88D166595AB00074A11 /* Debug */,
+				0450C88E166595AB00074A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0450C88F166595AB00074A11 /* Build configuration list for PBXNativeTarget "GrowlPushover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0450C890166595AB00074A11 /* Debug */,
+				0450C891166595AB00074A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0450C869166595AB00074A11 /* Project object */;
+}
