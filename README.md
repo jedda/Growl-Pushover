@@ -21,4 +21,8 @@ The project's [Issues Tracker](https://github.com/jedda/Growl-Pushover/issues) i
 License:
 --------
 
-This work is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).
+Growl-Pushover is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US). You are free to copy, distribute, transmit, or adapt the work, as long as you attribute the original author.
+
+*Pushover is a trademark and product of Superblock, LLC. Copyright © 2012 Superblock, LLC. All rights reserved.*
+
+*The Growl Project is © 2004 - 2012 Growl Team.*
