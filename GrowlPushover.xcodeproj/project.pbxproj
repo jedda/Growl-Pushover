@@ -245,6 +245,7 @@
 		0450C890166595AB00074A11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Shared Libraries/Growl2.0-SDK/Plugin Development\"",
@@ -261,6 +262,7 @@
 		0450C891166595AB00074A11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Shared Libraries/Growl2.0-SDK/Plugin Development\"",
