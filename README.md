@@ -1,3 +1,5 @@
+![Growl-Pushover](http://jedda.me/wp-content/uploads/2012/11/GrowlPushover.png)
+
 Growl-Pushover
 =========================
 
