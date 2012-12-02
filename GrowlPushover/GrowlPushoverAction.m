@@ -74,7 +74,12 @@
     if ([[configuration valueForKey:@"onlyToSpecificDevice"] boolValue]) {
         paramString = [paramString stringByAppendingFormat:@"&device=%@", [configuration valueForKey:@"specificDeviceString"] ];
     }
-        
+    
+    // check to see if we are sending a custom notification sound
+    if ([[configuration valueForKey:@"useCustomSound"] boolValue]) {
+        paramString = [paramString stringByAppendingFormat:@"&sound=%@", [configuration valueForKey:@"customSoundName"] ];
+    }
+    
     NSMutableURLRequest *pushoverRequest =  [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.pushover.net/1/messages.json"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];;
     pushoverRequest.HTTPBody = [[paramString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] dataUsingEncoding:NSUTF8StringEncoding];
     pushoverRequest.HTTPMethod = @"POST";

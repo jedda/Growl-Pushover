@@ -14,7 +14,7 @@
 
 @implementation GrowlPushoverPreferencePane
 
-@synthesize  specificDeviceStringField, priorityListButton, prefixStringField;
+@synthesize  soundListButton, specificDeviceStringField, priorityListButton, prefixStringField;
 @synthesize  testStatusField;
 
 -(NSString*)mainNibName {
@@ -29,7 +29,7 @@
 	static NSSet *keys = nil;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
-		keys = [NSSet setWithObjects:@"pushoverUserKey", @"onlyIfIdle", @"onlyToSpecificDevice", @"specificDeviceString", @"onlyIfPriority", @"minimumPriority", @"usePrefix", @"prefixString", @"pushoverAppKey", nil];
+		keys = [NSSet setWithObjects:@"pushoverUserKey", @"onlyIfIdle", @"useCustomSound", @"customSoundName", @"onlyToSpecificDevice", @"specificDeviceString", @"onlyIfPriority", @"minimumPriority", @"usePrefix", @"prefixString", @"pushoverAppKey", nil];
         NSLog(@"BindingKeysBeingCalled");
 	});
 	return keys;
@@ -43,6 +43,12 @@
 
 -(void)updateConfigurationValues {
 	[super updateConfigurationValues];
+    
+    if ([[self.configuration valueForKey:@"useCustomSound"] boolValue]) {
+        [soundListButton setEnabled:TRUE];
+    } else {
+        [soundListButton setEnabled:FALSE];
+    }
     
     if ([[self.configuration valueForKey:@"onlyIfPriority"] boolValue]) {
         [priorityListButton setEnabled:TRUE];
@@ -84,12 +90,24 @@
     [self setConfigurationValue:[NSNumber numberWithBool:onlyIfIdle] forKey:@"onlyIfIdle"];
 }
 
+- (BOOL)useCustomSound { return [[self.configuration valueForKey:@"useCustomSound"] boolValue]; }
+
+- (void)setUseCustomSound:(BOOL)useCustomSound {
+    [self setConfigurationValue:[NSNumber numberWithBool:useCustomSound] forKey:@"useCustomSound"];
+    [self updateConfigurationValues];
+}
+
+- (NSString*)customSoundName { return [self.configuration valueForKey:@"customSoundName"]; }
+
+- (void)setCustomSoundName:(NSString*)customSoundName {
+    [self setConfigurationValue:customSoundName forKey:@"customSoundName"];
+}
+
 - (BOOL)onlyToSpecificDevice { return [[self.configuration valueForKey:@"onlyToSpecificDevice"] boolValue]; }
 
 - (void)setOnlyToSpecificDevice:(BOOL)onlyToSpecificDevice {
     [self setConfigurationValue:[NSNumber numberWithBool:onlyToSpecificDevice] forKey:@"onlyToSpecificDevice"];
     [self updateConfigurationValues];
-
 }
 
 - (NSString*)specificDeviceString { return [self.configuration valueForKey:@"specificDeviceString"]; }

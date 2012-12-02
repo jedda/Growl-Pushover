@@ -14,6 +14,7 @@
 
 @interface GrowlPushoverPreferencePane : GrowlPluginPreferencePane
 
+@property IBOutlet NSPopUpButton            *soundListButton;
 @property IBOutlet NSTextField              *specificDeviceStringField;
 @property IBOutlet NSPopUpButton            *priorityListButton;
 @property IBOutlet NSTextField              *prefixStringField;
@@ -25,14 +26,18 @@
 - (void)setPushoverUserKey:(NSString*)pushoverUserKey;
 - (BOOL)onlyIfIdle;
 - (void)setOnlyIfIdle:(BOOL)onlyIfIdle;
+- (BOOL)useCustomSound;
+- (void)setUseCustomSound:(BOOL)onlyIfIdle;
+- (NSString*)customSoundName;
+- (void)setCustomSoundName:(NSString*)specificDeviceString;
 - (BOOL)onlyToSpecificDevice;
 - (void)setOnlyToSpecificDevice:(BOOL)onlyToSpecificDevice;
 - (NSString*)specificDeviceString;
 - (void)setSpecificDeviceString:(NSString*)specificDeviceString;
-- (BOOL) onlyIfPriority;
-- (void) setOnlyIfPriority:(BOOL)onlyIfPriority;
-- (int) minimumPriority;
-- (void) setMinimumPriority:(int)minimumPriority;
+- (BOOL)onlyIfPriority;
+- (void)setOnlyIfPriority:(BOOL)onlyIfPriority;
+- (int)minimumPriority;
+- (void)setMinimumPriority:(int)minimumPriority;
 - (BOOL)usePrefix;
 - (void)setUsePrefix:(BOOL)usePrefix;
 - (NSString*)prefixString;

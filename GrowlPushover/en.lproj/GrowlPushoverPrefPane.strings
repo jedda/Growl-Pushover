@@ -1,0 +1,91 @@
+/*
+ GrowlPushover
+ 
+ Created by Jedda Wignall on 2/12/12.
+ This work is licensed under a Creative Commons Attribution 3.0 Unported License.
+ http://creativecommons.org/licenses/by/3.0/deed.en_US
+*/
+
+/* Title for section of preferences holding notification settings */
+"35.title" = "Notification Settings";
+
+/* Very Low notification priority */
+"107.title" = "Very Low";
+
+/* Moderate notification priority */
+"108.title" = "Moderate";
+
+/* Normal notification priority */
+"109.title" = "Normal";
+
+/* High notification priority */
+"122.title" = "High";
+
+/* Emergency notification priority */
+"123.title" = "Emergency";
+
+/* Tooltip describing idle Mac option */
+"136.ibShadowedToolTip" = "Only forward a notification when this Mac has been idle for 5 minutes or more.";
+
+/* Only when this Mac is idle */
+"137.title" = "Only when this Mac is idle";
+
+/* Optional Notification Prefix */
+"170.placeholderString" = "Optional Prefix";
+
+/* Title for section of preferences holding advanced settings */
+"197.title" = "Advanced Settings";
+
+/* Label for user to specify a custom application key */
+"200.title" = "Custom App Key:";
+
+/* Placeholder for optional custom application key */
+"201.placeholderString" = "Optional - Custom Pushover App Key";
+
+/* Tooltip describing minimum priority option */
+"222.ibShadowedToolTip" = "Forward notifications only when the Growl priority is at least a specified value.";
+
+/* Label for user to select a minimum priority from a list: */
+"223.title" = "Only when priority is at least:";
+
+/* Tooltip describing prefixed text option */
+"226.ibShadowedToolTip" = "Prefix forwarded notification titles with the provided text.";
+
+/* Prefix notification with provided text */
+"227.title" = "Prefix notification with:";
+
+/* Optional Notification Prefix */
+"254.ibShadowedIsNilPlaceholder" = "Optional Prefix";
+
+/* Pushover User Key: */
+"258.title" = "Pushover User Key:";
+
+/* Placeholder for user's Pushover User Key */
+"259.placeholderString" = "Your Pushover User Key";
+
+/* Placeholder for user's Pushover User Key */
+"260.ibShadowedIsNilPlaceholder" = "Your Pushover User Key";
+
+/* Tooltip describing specific device option */
+"268.ibShadowedToolTip" = "Forward notifications only to the specified device identifier.";
+
+/* Label for user to input a specific device to notify: */
+"269.title" = "Only to this Pushover device:";
+
+/* Placeholder for Optional Device name */
+"270.placeholderString" = "Optional Device";
+
+/* Placeholder for Optional Device name */
+"275.ibShadowedIsNilPlaceholder" = "Optional Device";
+
+/* Text for Test Settings button */
+"281.title" = "Test Settings";
+
+/* Placeholder for optional custom application key */
+"293.ibShadowedIsNilPlaceholder" = "Optional - Custom Pushover App Key";
+
+/* Tooltip describing custom sound option */
+"296.ibShadowedToolTip" = "Define a custom notification sound from the provided list.";
+
+/* Label for user to specify a custom notification sound: */
+"297.title" = "Use custom notification sound:";

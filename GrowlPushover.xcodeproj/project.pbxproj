@@ -10,11 +10,11 @@
 		0450C876166595AB00074A11 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0450C875166595AB00074A11 /* Cocoa.framework */; };
 		0450C878166595AB00074A11 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0450C877166595AB00074A11 /* AppKit.framework */; };
 		0450C87A166595AB00074A11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0450C879166595AB00074A11 /* Foundation.framework */; };
-		0450C880166595AB00074A11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0450C87E166595AB00074A11 /* InfoPlist.strings */; };
 		0450C884166595AB00074A11 /* GrowlPushoverPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0450C882166595AB00074A11 /* GrowlPushoverPrefPane.xib */; };
 		0450C889166595AB00074A11 /* GrowlPushoverPreferencePane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C888166595AB00074A11 /* GrowlPushoverPreferencePane.m */; };
 		0450C88C166595AB00074A11 /* GrowlPushoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0450C88B166595AB00074A11 /* GrowlPushoverAction.m */; };
 		0450C893166595C900074A11 /* GrowlPlugins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0450C892166595C900074A11 /* GrowlPlugins.framework */; };
+		0458563F166B22F100C152D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0458563D166B22F100C152D7 /* InfoPlist.strings */; };
 		04FA9CC01665F5BB00546F67 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04FA9CBF1665F5BB00546F67 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,14 +24,15 @@
 		0450C877166595AB00074A11 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0450C879166595AB00074A11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0450C87D166595AB00074A11 /* GrowlPushover-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrowlPushover-Info.plist"; sourceTree = "<group>"; };
-		0450C87F166595AB00074A11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0450C881166595AB00074A11 /* GrowlPushover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrowlPushover-Prefix.pch"; sourceTree = "<group>"; };
-		0450C883166595AB00074A11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GrowlPushoverPrefPane.xib; sourceTree = "<group>"; };
 		0450C887166595AB00074A11 /* GrowlPushoverPreferencePane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowlPushoverPreferencePane.h; sourceTree = "<group>"; };
 		0450C888166595AB00074A11 /* GrowlPushoverPreferencePane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowlPushoverPreferencePane.m; sourceTree = "<group>"; };
 		0450C88A166595AB00074A11 /* GrowlPushoverAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowlPushoverAction.h; sourceTree = "<group>"; };
 		0450C88B166595AB00074A11 /* GrowlPushoverAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowlPushoverAction.m; sourceTree = "<group>"; };
 		0450C892166595C900074A11 /* GrowlPlugins.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GrowlPlugins.framework; path = "../../Shared Libraries/Growl2.0-SDK/Plugin Development/GrowlPlugins.framework"; sourceTree = "<group>"; };
+		0458563E166B22F100C152D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04585644166B24C500C152D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/GrowlPushoverPrefPane.xib; sourceTree = "<group>"; };
+		04585646166B24D300C152D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/GrowlPushoverPrefPane.strings; sourceTree = "<group>"; };
 		04FA9CBF1665F5BB00546F67 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -96,8 +97,8 @@
 		0450C87C166595AB00074A11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0458563D166B22F100C152D7 /* InfoPlist.strings */,
 				0450C87D166595AB00074A11 /* GrowlPushover-Info.plist */,
-				0450C87E166595AB00074A11 /* InfoPlist.strings */,
 				0450C881166595AB00074A11 /* GrowlPushover-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -129,7 +130,7 @@
 		0450C869166595AB00074A11 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Jedda Wignall";
 			};
 			buildConfigurationList = 0450C86C166595AB00074A11 /* Build configuration list for PBXProject "GrowlPushover" */;
@@ -138,6 +139,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
+				fr,
 			);
 			mainGroup = 0450C867166595AB00074A11;
 			productRefGroup = 0450C873166595AB00074A11 /* Products */;
@@ -154,8 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0450C880166595AB00074A11 /* InfoPlist.strings in Resources */,
 				0450C884166595AB00074A11 /* GrowlPushoverPrefPane.xib in Resources */,
+				0458563F166B22F100C152D7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,20 +177,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0450C87E166595AB00074A11 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0450C87F166595AB00074A11 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		0450C882166595AB00074A11 /* GrowlPushoverPrefPane.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0450C883166595AB00074A11 /* en */,
+				04585644166B24C500C152D7 /* Base */,
+				04585646166B24D300C152D7 /* en */,
 			);
 			name = GrowlPushoverPrefPane.xib;
+			sourceTree = "<group>";
+		};
+		0458563D166B22F100C152D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0458563E166B22F100C152D7 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -246,6 +250,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Shared Libraries/Growl2.0-SDK/Plugin Development\"",
@@ -263,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Shared Libraries/Growl2.0-SDK/Plugin Development\"",
