@@ -7,11 +7,23 @@ The features of this action style include:
 
 *   Choose to forward to [Pushover](http://pushover.net/) only when your Mac is idle
 *   Choose to forward to [Pushover](http://pushover.net/) only when a notification has a minimum priority
+*   Choose custom notification sounds for individual notification types
 *   Add a prefix to Notification titles to differentiate configurations or Macs.
 *   Push only to a specific [Pushover](http://pushover.net/) registered device.
 *   Define your own custom application key.
 
 A compiled and supported binary of Growl-Pushover is available at [http://jedda.me/projects/pushover-action-growl/](http://jedda.me/projects/pushover-action-growl/)
+
+Version History:
+--------
+
+* **1.1** - Added custom notification sounds for Pushover. Put preliminary localization files in place.
+* **1.0** - Initial release.
+
+Localization:
+--------
+
+I am seeking help to localize this plugin into common languages. If you can help with this, and are interested, [please get in contact](http://jedda.me/contact-jedda/).
 
 Support & Feedback:
 --------
