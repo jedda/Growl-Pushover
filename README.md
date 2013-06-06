@@ -19,6 +19,7 @@ A compiled and supported binary of Growl-Pushover is available at [http://jedda.
 Version History:
 --------
 
+* **1.3** - Added new sounds.
 * **1.1** - Added custom notification sounds for Pushover. Put preliminary localization files in place.
 * **1.0** - Initial release.
 
