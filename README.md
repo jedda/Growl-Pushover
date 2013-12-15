@@ -41,3 +41,5 @@ Growl-Pushover is licensed under a [Creative Commons Attribution 3.0 Unported Li
 *Pushover is a trademark and product of Superblock, LLC. Copyright © 2012 Superblock, LLC. All rights reserved.*
 
 *The Growl Project is © 2004 - 2012 Growl Team.*
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jedda/growl-pushover/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
